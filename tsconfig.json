@@ -1,6 +1,41 @@
 {
-  "extends": "expo/tsconfig.base",
-  "compilerOptions": {
-    "strict": true
-  }
+    "extends": "expo/tsconfig.base",
+    "compilerOptions": {
+        "target": "esNext",
+        "module": "esNext",
+        "lib": [
+            "es5",
+            "es6",
+            "es7",
+            "ESNext",
+            "DOM"
+        ],
+        "allowJs": true,
+        "jsx": "react-native",
+        "noEmit": true,
+        "downlevelIteration": true,
+        "isolatedModules": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "moduleResolution": "node",
+        "baseUrl": ".",
+        "paths": {
+            "*": [
+                "node_modules/*"
+            ],
+        },
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "skipLibCheck": true,
+        "resolveJsonModule": true,
+        "strict": true,
+        "noImplicitAny": false, /* Если true, то не будет работать сборка дистрибутива на сборочном. */
+    },
+    "exclude": [
+        "node_modules",
+        "babel.config.js",
+        "metro.config.js",
+        "jest.config.js"
+    ]
 }

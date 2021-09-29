@@ -1,0 +1,10 @@
+/node_modules/
+/dist/
+/node/
+/debug_tools/
+/.awcache/
+/docs/
+/tslintrules/
+/android/
+/ios/
+/.gradle/
